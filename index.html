@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiro's Agency</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    @media (min-width: 831px) and (max-width: 1544px) {
+
+      .twocards {
+        flex-direction: column;
+      }
+
+      .leftcard .cardcontent, .rightcard .cardcontent {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 830px) {
+
+      img.logo {
+        position: relative;
+        left: 0px;
+        width: 400px;
+        height: auto;
+
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      .main {
+        text-align: center;
+      }
+
+      .twocards {
+      display: contents;
+      flex-direction: row;
+      }
+
+      .leftcard, .rightcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="main">
+
+
+    <img class="logo" src="./assets/images/HeffloxLogo.png" alt="logo">
+    <h1>We are your <span style="color: #aeac79;">Honest</span><br> Retail Shop</h1>
+    
+
+    <div class="twocards">
+
+      <div class="leftcard">
+        <img class="tile-image" src="./assets/images/beautiful.jpg" alt="hand and flower in water">
+        <div class="cardcontent">
+          <h2 class="card-title">Honesty and Trust</h2>
+          <p class="card-text">We strive to provide honest services and turstworthy relationships between the customer in order to display gratitude for trusting our shop and its services.</p>
+        </div>
+      </div>
+
+      <br>
+
+    
+      <div class="rightcard">
+        <img class="tile-image" src="./assets/images/construction.jpg" alt="metal structure">
+        <div class="cardcontent">
+          <h2 class="card-title">Mission and Vision</h2>
+          <p>Our Mission is to provide high-quality, reliable auto parts and exceptional customer service, ensuring that every 
+            vehicle owner and mechanic has access to the tools and components they need to keep their vehicles running smoothly 
+            and safely.
+            Our Vision is to be the leading auto parts retailer, recognized for our commitment to quality, affordability, and 
+            customer satisfaction, while continuously expanding our reach and innovating in the automotive industry.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  <footer>
+    <p>Create. Develop. Design.</p>
+  </footer>
+</body>
+
+</html>
